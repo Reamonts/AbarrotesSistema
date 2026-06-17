@@ -15,7 +15,7 @@ import java.util.List;
 //se trabaja en paralelo con spring security implementando sus metodos
 //para la autenicaion que hace spring durante el login
 @Service
-public class UsuarioServicio implements UserDetailsService {
+public class  UsuarioServicio implements UserDetailsService {
     @Autowired
     private RepoUsuario repoUsuario;
 
