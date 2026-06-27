@@ -8,21 +8,23 @@ import java.time.LocalDate;
 public class MovimientosInventarioDTO {
 
     private Long id;
+    private Productos producto;
     private MovimientosInventario.TipoMovimiento tipo;
     private int cantidad;
     private int stock_antes;
     private int stock_despues;
-    private Productos producto;
+
     private Integer referencia_id;
     private LocalDate fecha;
 
-    public MovimientosInventarioDTO(Long id, MovimientosInventario.TipoMovimiento tipo, int cantidad, int stock_antes, int stock_despues, Productos producto,Integer referencia_id, LocalDate fecha) {
+    public MovimientosInventarioDTO(Long id,Productos producto, MovimientosInventario.TipoMovimiento tipo, int cantidad, int stock_antes, int stock_despues ,Integer referencia_id, LocalDate fecha) {
         this.id = id;
+        this.producto = producto;
         this.tipo = tipo;
         this.cantidad = cantidad;
         this.stock_antes = stock_antes;
         this.stock_despues = stock_despues;
-        this.producto = producto;
+
         this.referencia_id = referencia_id;
         this.fecha = fecha;
     }

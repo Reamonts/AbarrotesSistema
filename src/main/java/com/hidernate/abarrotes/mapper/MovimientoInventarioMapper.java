@@ -8,11 +8,11 @@ public class MovimientoInventarioMapper
     public static MovimientosInventarioDTO toDTOMI(MovimientosInventario MI){
         return new  MovimientosInventarioDTO(
                 MI.getId(),
+                MI.getProducto(),
                 MI.getTipo(),
                 MI.getCantidad(),
                 MI.getStock_antes(),
                 MI.getStock_despues(),
-                MI.getProducto(),
                 MI.getReferencia_id(),
                 MI.getFecha()
         );

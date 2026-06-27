@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 
 
 //@data  ayuda a generar automaticamente todos los setters y getter
-//@NoArgsConstructor   genera un constructor vacio necesario para que jpa trabaje crea instancias de la entidad para trabajar con bd
+//@NoArgsConstructor   genera un constructor vacio necesario para que jpa trabaje crea instancias de la entidad para trabajar con bd.sql
 //AllArgsConstructor    para generar constructor con todos los campos con todos los campos para guarddar todos los datios
 
 //@column name  hacemos explicito el mapeo para expecificar la columna
@@ -25,7 +25,7 @@ public class Productos {
     // identificar el campo que funquira como llave primaria
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //llama una anotacion para generar valor automatico
-    @Column(name="id_producto")
+    @Column(name="id")
     private Long id;
 
     @Column(name="nombre")
@@ -51,7 +51,7 @@ public class Productos {
 
     @Column(name="activo")
     private Boolean activo;
-
+ 
 
     @Override
     public String toString() {

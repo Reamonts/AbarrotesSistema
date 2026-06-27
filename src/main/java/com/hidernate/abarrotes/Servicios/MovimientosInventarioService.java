@@ -33,6 +33,7 @@ public class MovimientosInventarioService
         return MovimientoInventarioMapper.toDTOMI(MI);
     }
 
+    /// When inserting a new MI you must add an object "producto" that indicate the "producto" ID. producto :{"id": 5}
     public MovimientosInventarioDTO Service_InsertaMI(MovimientosInventarioDTO dto)
     {
         MovimientosInventario MI = MovimientoInventarioMapper.toEntityMI(dto);
