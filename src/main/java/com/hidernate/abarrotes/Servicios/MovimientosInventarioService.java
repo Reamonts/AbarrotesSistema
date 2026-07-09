@@ -1,7 +1,6 @@
 package com.hidernate.abarrotes.Servicios;
 
 import com.hidernate.abarrotes.DTOs.MovimientosInventarioDTO;
-import com.hidernate.abarrotes.DTOs.ProductosDTO;
 import com.hidernate.abarrotes.entity.MovimientosInventario;
 import com.hidernate.abarrotes.entity.Productos;
 import com.hidernate.abarrotes.mapper.MovimientoInventarioMapper;
